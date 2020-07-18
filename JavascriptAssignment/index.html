@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- // CHAP # 43-48 TASK 1 // -->
+    <div>
+        <a href="#" onclick="hello()">Click Me</a>
+    </div>
+
+    <!-- // CHAP # 43-48 TASK 2 // -->
+    <div>
+        <h1> Mobile Phone Lookup </h1>
+        <br>
+        <div class="flex">
+            <img src="https://www.notebookcheck.net/fileadmin/_processed_/b/a/csm_4_zu_3_Teaser_Huawei_P40_Pro_7507_0546c7bf80.jpg"
+                alt="smartphone" width="280" height="300" onclick="image()"> <br>
+            <a href="#" onclick="image()">Huawei</a>
+        </div>
+
+        <div class="flex">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTLGc-04rSye-9kr2qOd2uwzN1aDLnh1hvcQQ&usqp=CAU"
+                alt="smartphone" width="280" height="300" onclick="image()"> <br>
+            <a href="#" onclick="image()">Nokia</a>
+        </div>
+
+        <div class="flex">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQtc8a3-urM-Ro9qokaRScMDC0tOMSJa21NQA&usqp=CAU"
+                alt="smartphone" width="280" height="300" onclick="image()"> <br>
+            <a href="#" onclick="image()">Oppo</a>
+        </div>
+
+        <div class="flex">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR103rhC0hx1nffcSFfMsnxMILtolCFAgYNsQ&usqp=CAU"
+                alt="smartphone" width="280" height="300" onclick="image()"> <br>
+            <a href="#" onclick="image()">LG</a>
+        </div>
+    </div>
+
+    <!-- // CHAP # 43-48 TASK 3 // -->
+    <div>
+
+        <table id="myTable" width="60%" align="center" cellspacing="5" cellpadding="5">
+            <tr>
+                <th>Index</th>
+                <th>Name</th>
+                <th>Class</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>John</td>
+                <td>7</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Doe</td>
+                <td>8</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mark</td>
+                <td>6</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>James</td>
+                <td>9</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Dua</td>
+                <td>8</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Rija</td>
+                <td>7</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Shumaium</td>
+                <td>6</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Areeba</td>
+                <td>9</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Nabila</td>
+                <td>8</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Arqam</td>
+                <td>7</td>
+                <td><input type="button" value="Delete" onclick="deleteRow(this)"></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- // CHAP # 43-48 TASK 4 // -->
+    <div style="text-align: center;">
+        <img id="imgClick" src="3.jpg" onmouseover="MouseOver()" onmouseout="MouseOut()">
+    </div>
+
+    <!-- // CHAP # 43-48 TASK 5 // -->
+    <div id="counter">
+        <h1>Counter</h1>
+        <h2 id="count"> 0 </h2>
+        <button onclick="increase()">Increase</button>
+        <button onclick="decrease()">Decrease</button>
+    </div>
+
+
+    <!-- // CHAP # 49-52 TASK 1 // -->
+    <div style="text-align: center;">
+        <form>
+
+            <h1 style="visibility: hidden;" id="head"> Your Account Has Been
+                Created </h1>
+            <p style="visibility: hidden;" id="subname"></p>
+            <p style="visibility: hidden;" id="subnum"></p>
+            <p style="visibility: hidden;" id="submail"></p>
+
+            <h1 id="heading"> SignUp</h1>
+            <table align="center" width="50%" cellspacing="10px" cellpadding="10px" id="form">
+                <tr>
+                    <td align="center"> Name</td>
+                    <td align="center"> <input type="text" id="name" style="visibility: visible;"
+                            placeholder=" Enter Name" />
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td align="center"> Mobile Number </td>
+                    <td align="center"> <input type="number" type="number" id="num" style="visibility: visible;"
+                            placeholder=" Enter Mobile Number" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td align="center"> Email Address</td>
+                    <td align="center"> <input type="email" type="text" id="mail" style="visibility: visible;"
+                            placeholder=" Enter Email" />
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center"> Password</td>
+                    <td align="center"> <input type="password" id="pass" style="visibility: visible;"
+                            placeholder=" Enter Password" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="center"> Confirm Password</td>
+                    <td align="center"> <input type="password" id="Cpass" style="visibility: visible;"
+                            placeholder=" Enter Password Again" />
+                    </td>
+
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button style="width: 100px; height: 30px; font-size: 20px;" onclick="signUp()">SignUp</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <!-- // CHAP # 49-52 TASK 2 // -->
+    <div style="text-align: center;">
+        <img src="https://www.gizmochina.com/wp-content/uploads/2019/03/Oppo-A5s-AX5s-500x500.jpg" width="200"
+            height="250" alt="">
+        <p id="specification">
+            Model : Oppo A5s <br>
+            Status : Available <br>
+            Size : 6.2 inches <br>
+            <a href="#" onclick="readMore()"> Read More</a> <br>
+        </p>
+    </div>
+
+
+    <!-- // CHAP # 49-52 TASK 3 // -->
+<div>
+
+
+
+    <table width="80%" align="center" cellspacing="5" cellpadding="10" id="data_table" border=1 >
+        <tr>
+            <th>Name</th>
+            <th>Roll Number</th>
+            <th>Class</th>
+            <th> Apply </th>
+        </tr>
+
+        <tr id="row1">
+            <td id="name_row1">Mariam</td>
+            <td id="country_row1">17CS23</td>
+            <td id="age_row1">10</td>
+            <td>
+                <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                <input type="button" id="save_button1" value="Save" class="save" onclick="save_row()">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+            </td>
+        </tr>
+
+        <tr id="row2">
+            <td id="name_row2">Shumaium</td>
+            <td id="country_row2">17CS79</td>
+            <td id="age_row2">10</td>
+            <td>
+                <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+            </td>
+        </tr>
+
+        <tr id="row3">
+            <td id="name_row3">Rija</td>
+            <td id="country_row3">17CS73</td>
+            <td id="age_row3">9</td>
+            <td>
+                <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+            </td>
+        </tr>
+
+        <tr id="row4">
+            <td id="name_row4">Areeba</td>
+            <td id="country_row4">17CS24</td>
+            <td id="age_row4">9</td>
+            <td>
+                <input type="button" id="edit_button4" value="Edit" class="edit" onclick="edit_row('4')">
+                <input type="button" id="save_button4" value="Save" class="save" onclick="save_row('4')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('4')">
+            </td>
+        </tr>
+
+        <tr>
+            <td><input type="text" id="new_name"></td>
+            <td><input type="text" id="new_country"></td>
+            <td><input type="text" id="new_age"></td>
+            <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+        </tr>
+
+    </table>
+    </div>
+
+    <form id="edit-form" style="visibility: hidden;">
+        <h1> Edit Details </h1>
+        <label for="name-form"> Name </label> <br> <input id="name-form" type="text"> <br> <br>
+        <label for="c-form">Roll Number</label> <br><input id="c-form" type="text"> <br> <br>
+        <label for="age-form">Class</label> <br> <input id="age-form" type="number">
+        <br><br>
+        <h3> Click Save Button on Table to Update Details</h3>
+    </form>
+
+
+
+    <!-- // CHAP # 53-58 TASK 1 // -->
+
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times; </span>
+        <img class="modal-content" id="modal-img">
+
+    </div>
+    <div>
+        <img src="others/1.jpg" id="myImages" width="280" height="300" onclick="modalFunction()" alt="">
+        <img src="others/2.jpg" id="myImages" width="280" height="300" onclick="modalFunction()" alt="">
+        <img src="others/3.jpg" id="myImages" width="280" height="300" onclick="modalFunction()" alt="">
+        <img src="others/4.png" id="myImages" width="280" height="300" onclick="modalFunction()" alt="">
+
+    </div>
+
+
+
+    <!-- // CHAP # 53-58 TASK 2 // -->
+
+    <div>
+        <p id="para" style="font-size: medium;">
+
+            JavaScript is a scripting or programming language that allows you to implement complex
+            features on web pages — every time a web page does more than just sit there and display
+            static information for you to look at — displaying timely content updates, interactive maps,
+            animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can bet that JavaScript is probably
+            involved. It is the third layer of the layer cake of standard web technologies, two of which
+            (HTML and CSS) we have covered in much more detail in other parts of the Learning Area.
+
+            <br><br>
+            <button onclick="zoomIn()">Zoom In</button>
+            <button onclick="zoomOut()">Zoom Out</button>
+
+        </p>
+    </div>
+
+    <!-- // CHAP # 58-67 TASK 1 //  -->
+    <div>
+        <h1> DOM </h1>
+        <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+        </div>
+        <div id="main-content" class="content">
+            <p class="render">First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render">Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan</p>
+            <p class="render"> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
